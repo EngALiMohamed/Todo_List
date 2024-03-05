@@ -1,38 +1,109 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #535353;
+  justify-content: center;
+  align-items: center;
+  display: flex;  
+  word-wrap: break-word;
+}
+
 .App {
   text-align: center;
+  width: 60rem;
+  font-size: 30px;  
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #fff;
+  margin-bottom: 2.5rem;
+  font-size: 40px;
+  font-weight: 700;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.TodoWrapper {
+  background: #1a2636;
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 5px;  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.TodoForm {
+  width: 100%;
+  margin-bottom: 1rem; 
+
+}
+
+.todo-input {
+  outline: none;
+  background: none;
+  border: 3px solid #4d1cca;
+  padding:8.7px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 300px;
+  color: #fff;
+  font-size: 23px;
+}
+
+.todo-input::placeholder {
+  color: #ececec7e;
+}
+
+.todo-btn {
+  background: none;
+  color: #fff;
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
+  border: 3px solid #005e37;
+  margin-left: 6px;
+  font-size: 23px;
+
+}
+.todo-btn:hover{
+    background: #005e37;
+    transition: 0.3s;
+}
+.Todo {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: #4d1cca;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem; 
+
+}
+.edit-icon{
+    color: orange;
+}
+.delete-icon {
+  color: rgb(151, 0, 0);
 }
 
-.App-link {
-  color: #61dafb;
+.incompleted {
+  color: #fff;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.completed {
+  color: #00923d;
+  text-decoration: line-through;
+  cursor: pointer;
+  word-wrap: break-word;
+  font-weight: bold;
+}
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+  font-size: 30px;
+  margin:5px;
 }
